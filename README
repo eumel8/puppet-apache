@@ -1,0 +1,8 @@
+Puppet-apache
+
+This is yet another apache module for Puppet. This module is adapted to work with OpenSuse and SLES servers.
+Parts of the vhost manifest is copied from puppetlabs's torturial.
+
+Refrences:
+
+http://docs.puppetlabs.com/learning/definedtypes.html
