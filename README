@@ -1,7 +1,25 @@
-Puppet-apache
+Introduction: 
 
 This is yet another apache module for Puppet. This module is adapted to work with OpenSuse and SLES servers.
 Parts of the vhost manifest is copied from puppetlabs's torturial.
+
+Usage: 
+
+	apache::vhost {'example.com':
+		port          => 80,
+		docroot       => '/srv/www/example.com',
+		priority      => 25,
+		servername    => 'example.com',
+		serveraliases => 'www.example.com',
+	}
+
+
+apache::vhost also creates the docroot directory. 
+
+Packages installed:
+apache2 
+apache2-prefork
+apache2-mod_php5
 
 Refrences:
 
